@@ -1,53 +1,118 @@
 body{
-    background:#0d1117;
+    background:linear-gradient(135deg,#0a0f1c,#111827,#0f172a);
     color:white;
+    min-height:100vh;
 }
 
 .navbar{
-    border-bottom:1px solid #00ff99;
+    background:rgba(17,24,39,0.9)!important;
+    backdrop-filter:blur(15px);
+    border-bottom:1px solid rgba(0,255,153,0.2);
+}
+
+.navbar-brand{
+    font-size:1.4rem;
+    font-weight:700;
 }
 
 .card{
-    background:#161b22;
-    border:1px solid #00ff99;
-    border-radius:15px;
-    transition:0.3s;
+    background:rgba(22,27,34,0.8);
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    transition:all 0.3s ease;
+
+    overflow:hidden;
 }
 
 .card:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 20px rgba(0,255,153,0.4);
+    transform:translateY(-8px);
+    box-shadow:0 10px 35px rgba(0,255,153,0.15);
 }
 
 .btn-primary{
     background:#00ff99;
     border:none;
     color:black;
+    font-weight:600;
 }
 
 .btn-primary:hover{
-    background:#00cc7a;
+    background:#00d17e;
+    color:black;
 }
 
 .btn-success{
     background:#00ff99;
     border:none;
     color:black;
+    font-weight:600;
+}
+
+.btn-success:hover{
+    background:#00d17e;
+    color:black;
 }
 
 textarea{
-    background:#161b22 !important;
-    color:white !important;
-    border:1px solid #00ff99 !important;
+    background:#161b22!important;
+    color:white!important;
+    border:1px solid rgba(0,255,153,0.3)!important;
+    border-radius:15px!important;
 }
 
 input{
-    background:#161b22 !important;
-    color:white !important;
-    border:1px solid #00ff99 !important;
+    background:#161b22!important;
+    color:white!important;
+    border:1px solid rgba(0,255,153,0.3)!important;
+    border-radius:15px!important;
+}
+
+input:focus,
+textarea:focus{
+    box-shadow:0 0 15px rgba(0,255,153,0.25)!important;
+    border-color:#00ff99!important;
 }
 
 pre{
     color:#00ff99;
     white-space:pre-wrap;
 }
+
+h1,h2,h3,h4,h5{
+    font-weight:700;
+}
+
+.stats-card{
+    text-align:center;
+    padding:20px;
+}
+
+.stats-number{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.card{
+    color:white;
+}
+
+.card p{
+    color:#d1d5db;
+}
+
+.card h5{
+    color:white;
+}
+
+.stats-number{
+    color:white;
+}
+
+.text-secondary{
+    color:#cbd5e1 !important;
+}
+
