@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="card mb-4">
+    <div class="card-body text-center">
+
+        <h1 class="display-5 fw-bold">
+            🛡️ CyberMentor AI
+        </h1>
+
+        <p class="text-success fs-5">
+            AI Powered Cybersecurity Threat Intelligence Platform
+        </p>
+
+        <p>
+            Welcome back, {{ username }}
+        </p>
+
+    </div>
+</div>
+<div class="row mt-3 mb-4">
+
+    <div class="col-md-4">
+        <div class="card bg-success text-light">
+            <div class="card-body">
+                <h5>
+                <i class="fa-solid fa-shield-halved"></i>
+                Total Analyses
+                </h5>
+                <h2>{{ total_analyses }}</h2>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+    <div class="card bg-danger text-light">
+        <div class="card-body">
+            <h5>
+                <i class="fa-solid fa-exclamation-triangle"></i>
+                Highest Risk Score
+            </h5>
+            <h2>{{ highest_risk }}/100</h2>
+        </div>
+    </div>
+</div>
+<div class="col-md-4">
+    <div class="card bg-primary text-light">
+        <div class="card-body">
+            <h5>
+                <i class="fa-solid fa-bolt"></i>
+                Recent Threat
+            </h5>
+            <h6>{{ recent_threat }}</h6>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="row mt-4">
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-success text-light">
+            <div class="card-body">
+                <h5>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    Total Analyses
+                </h5>
+                <h2>{{ total_analyses }}</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-danger text-light">
+            <div class="card-body">
+                <h5>Highest Risk Score</h5>
+                <h2>{{ highest_risk }}/100</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-3">
+        <div class="card bg-primary text-light">
+            <div class="card-body">
+                <h5>Recent Threat</h5>
+                <h6>{{ recent_threat }}</h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row mt-4">
+
+    <div class="col-md-6">
+        <div class="card bg-secondary text-light">
+            <div class="card-body">
+                <h3>Threat Analysis</h3>
+                <p>Analyze suspicious cyber incidents.</p>
+                <a href="/analyze" class="btn btn-primary">
+                    Open
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card bg-secondary text-light">
+            <div class="card-body">
+                <h3>Analysis History</h3>
+                <p>View previous analyses.</p>
+                <a href="/history" class="btn btn-primary">
+                    Open
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

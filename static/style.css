@@ -1,0 +1,53 @@
+body{
+    background:#0d1117;
+    color:white;
+}
+
+.navbar{
+    border-bottom:1px solid #00ff99;
+}
+
+.card{
+    background:#161b22;
+    border:1px solid #00ff99;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(0,255,153,0.4);
+}
+
+.btn-primary{
+    background:#00ff99;
+    border:none;
+    color:black;
+}
+
+.btn-primary:hover{
+    background:#00cc7a;
+}
+
+.btn-success{
+    background:#00ff99;
+    border:none;
+    color:black;
+}
+
+textarea{
+    background:#161b22 !important;
+    color:white !important;
+    border:1px solid #00ff99 !important;
+}
+
+input{
+    background:#161b22 !important;
+    color:white !important;
+    border:1px solid #00ff99 !important;
+}
+
+pre{
+    color:#00ff99;
+    white-space:pre-wrap;
+}

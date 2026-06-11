@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Threat Analysis</h1>
+
+<form method="POST">
+
+    <textarea
+        class="form-control"
+        name="incident"
+        rows="8"
+        placeholder="Example: Someone claiming to be from SBI called and asked for my OTP..."
+        required></textarea>
+
+    <br>
+
+    <button class="btn btn-success btn-lg">
+    🔍 Analyze Threat
+</button>
+
+</form>
+
+{% if result %}
+
+<div class="card mt-4 bg-secondary text-light">
+    <div class="card-body">
+        <pre>{{ result }}</pre>
+    </div>
+</div>
+
+{% endif %}
+
+{% endblock %}
